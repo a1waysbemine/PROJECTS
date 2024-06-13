@@ -6,7 +6,7 @@ const BrandStory = () => {
             <div className="subInner">
                 <h2>BRAND STORY</h2>
                 <p className="thum">
-                    <img src="../images/about/story_videothum.jpg" alt="" />
+                    <img src="./images/about/story_videothum.jpg" alt="" />
                 </p>
                 <article className="text">
                     인생의 많은 순간,

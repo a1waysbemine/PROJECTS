@@ -36,17 +36,17 @@ const Con4 = () => {
                                 href="https://www.instagram.com/p/C73d3aHyAYA/?img_index=1"
                                 target="blank"
                             >
-                                <img src="../images/main/con4_img1.jpg" alt="" />
+                                <img src="./images/main/con4_img1.jpg" alt="" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/reel/C705SUXShhJ/" target="blank">
-                                <img src="../images/main/con4_img2.jpg" alt="" />
+                                <img src="./images/main/con4_img2.jpg" alt="" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/p/C70LqxQyDin/" target="blank">
-                                <img src="../images/main/con4_img3.jpg" alt="" />
+                                <img src="./images/main/con4_img3.jpg" alt="" />
                             </a>
                         </li>
                         <li>
@@ -54,7 +54,7 @@ const Con4 = () => {
                                 href="https://www.instagram.com/sidiz_korea/p/C7oBfQruceR/?img_index=1"
                                 target="blank"
                             >
-                                <img src="../images/main/con4_img4.jpg" alt="" />
+                                <img src="./images/main/con4_img4.jpg" alt="" />
                             </a>
                         </li>
                         <li>
@@ -62,7 +62,7 @@ const Con4 = () => {
                                 href="https://www.instagram.com/sidiz_korea/reel/C7ntLBnvwOr/"
                                 target="blank"
                             >
-                                <img src="../images/main/con4_img5.jpg" alt="" />
+                                <img src="./images/main/con4_img5.jpg" alt="" />
                             </a>
                         </li>
                     </ul>
@@ -86,7 +86,7 @@ const Con4 = () => {
                     </span>
                     <p className="pic">
                         <a href="https://blog.naver.com/sidiz_official/223217691179" target="blank">
-                            <img src="../images/main/con4_img6.jpg" alt="" />
+                            <img src="./images/main/con4_img6.jpg" alt="" />
                         </a>
                     </p>
                 </div>

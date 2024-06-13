@@ -11,17 +11,17 @@ const Con2 = () => {
                 </span>
                 <ul className="list">
                     <li>
-                        <img src="../images/main/con2_img1.jpg" alt="" />
+                        <img src="./images/main/con2_img1.jpg" alt="" />
                         <h3>EGA</h3>
                         <strong>나만을 위한 아늑함</strong>
                     </li>
                     <li>
-                        <img src="../images/main/con2_img2.jpg" alt="" />
+                        <img src="./images/main/con2_img2.jpg" alt="" />
                         <h3>BUTTON</h3>
                         <strong>심플 & 미니멀</strong>
                     </li>
                     <li>
-                        <img src="../images/main/con2_img3.jpg" alt="" />
+                        <img src="./images/main/con2_img3.jpg" alt="" />
                         <h3>MANE</h3>
                         <strong>취향따라 고르는 멀티체어</strong>
                     </li>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import GlobalStyle from './styled/GlobalStyle';
 import Layout from './components/Layout';
 import Main from './pages/Main/Main';
@@ -14,7 +14,7 @@ import Cart from './pages/cart/Cart';
 const App = () => {
     return (
         <>
-            <BrowserRouter>
+            <Router>
                 <GlobalStyle />
                 <Routes>
                     <Route path="/" element={<Layout />}>
@@ -30,7 +30,7 @@ const App = () => {
                         <Route path="/support" element={<Support />} />
                     </Route>
                 </Routes>
-            </BrowserRouter>
+            </Router>
         </>
     );
 };
