@@ -58,7 +58,7 @@ import CasterDetail from './components/Product/selfRepair/caster/CasterDetail';
 const App = () => {
     return (
         <>
-            <BrowserRouter>
+            <Router>
                 <GlobalStyle />
                 <Routes>
                     <Route path="/" element={<Layout />}>
@@ -162,7 +162,7 @@ const App = () => {
                         <Route path="/support" element={<Support />} />
                     </Route>
                 </Routes>
-            </BrowserRouter>
+            </Router>
         </>
     );
 };
