@@ -1,12 +1,19 @@
-import { AboutWrap } from '../../pages/about/AboutStyle';
+import { BrandStoryWrap } from './AboutStyle';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
-const BrandStory = () => {
+const BrandStory = ({ setOnTab }) => {
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
     return (
-        <AboutWrap>
+        <BrandStoryWrap>
             <div className="subInner">
                 <h2>BRAND STORY</h2>
                 <p className="thum">
-                    <img src="./images/about/story_videothum.jpg" alt="" />
+                    <Link to="https://www.youtube.com/watch?v=mOPEVh_bisU" target="_blank">
+                        <img src="./images/about/story_videothum.jpg" alt="" />
+                    </Link>
                 </p>
                 <article className="text">
                     인생의 많은 순간,
@@ -38,35 +45,35 @@ const BrandStory = () => {
                 <ul className="list">
                     <li>
                         <h4>DESIGN THINKING</h4>
-                        <p>
+                        <b>
                             사용자의 앉음을 관찰하여 문제점을 발견하고
                             <br />
                             이에 대한 해결책을 제시한다.
-                        </p>
+                        </b>
                     </li>
                     <li>
                         <h4>ERGONOMICS</h4>
-                        <p>
+                        <b>
                             사용자가 제품을 편리하고 안전하게 쓸 수 있도록
                             <br />
-                            인간의 신체적
-                        </p>
+                            인간의 신체적/인지적 특성을 고려하여 제품을 설계한다.
+                        </b>
                     </li>
                     <li>
                         <h4>ENGINEERING</h4>
-                        <p>
+                        <b>
                             전문 기술력을 바탕으로
                             <br />
                             선도적인 제품을 만들고 계속 발전시킨다.
-                        </p>
+                        </b>
                     </li>
                     <li>
                         <h4>SUSTAINABILITY</h4>
-                        <p>
+                        <b>
                             제품의 설계-제조-유통-사용-폐기 과정 전반에 걸쳐
                             <br />
                             환경에 대한 책임의식을 갖는다.
-                        </p>
+                        </b>
                     </li>
                 </ul>
                 <h3>HISTORY</h3>
@@ -74,14 +81,14 @@ const BrandStory = () => {
                     <p>
                         <img src="../images/about/history_visual.jpg" alt="" />
                     </p>
-                    <p>
+                    <p className="txt">
                         좋은 의자를 만들겠다는 일념으로 출발한 시디즈는
                         <br />삶 속에 편안함의 가치를 창조하기 위해 노력해왔습니다.
-                        <span>시디즈의 역사 보러가기</span>
+                        <span onClick={() => setOnTab(1)}>시디즈의 역사 보러가기</span>
                     </p>
                 </div>
             </div>
-        </AboutWrap>
+        </BrandStoryWrap>
     );
 };
 

@@ -1,13 +1,23 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FooterWrap } from './FooterStyle';
+import { useDispatch } from 'react-redux';
+import { changeCategory } from '../../store/modules/productSlice';
 
 const Footer = () => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const goCategory = (idx) => {
+        dispatch(changeCategory(idx));
+        navigate('/products');
+    };
+
     return (
         <FooterWrap>
             <div className="inner">
                 <Link to="/main">
                     <h1>
-                        <img src="../images/main/footer_logo.png" alt="" />
+                        <img src="../../images/main/footer_logo.png" alt="" />
                     </h1>
                 </Link>
                 <ul className="info">
@@ -48,13 +58,13 @@ const Footer = () => {
                     <li className="menu">
                         제품
                         <ul>
-                            <li>WORK</li>
-                            <li>WORK & MORE</li>
-                            <li>GAMING</li>
-                            <li>STUDY</li>
-                            <li>for KIDS</li>
-                            <li>SEAT BOOSTER</li>
-                            <li>SELF-REPAIR</li>
+                            <li onClick={() => goCategory(0)}>WORK</li>
+                            <li onClick={() => goCategory(1)}>WORK & MORE</li>
+                            <li onClick={() => goCategory(2)}>GAMING</li>
+                            <li onClick={() => goCategory(3)}>STUDY</li>
+                            <li onClick={() => goCategory(4)}>for KIDS</li>
+                            <li onClick={() => goCategory(5)}>SEAT BOOSTER</li>
+                            <li onClick={() => goCategory(6)}>SELF-REPAIR</li>
                         </ul>
                     </li>
                     <li className="menu">
@@ -69,7 +79,7 @@ const Footer = () => {
                     </li>
                     <li className="menu">
                         컨택센터
-                        <ul>
+                        <ul className="time">
                             <li>1577 - 5674</li>
                             <li>평일 | 09:30 - 17:30</li>
                             <li>토요일 | 09:30 - 12:30</li>

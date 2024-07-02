@@ -4,7 +4,6 @@ export const VisualWrap = styled.section`
     width: 100%;
     height: 950px;
     box-sizing: border-box;
-    /* padding-bottom: 50px; */
     border-bottom: 2px solid #dcdcdc;
     .visualInner {
         position: relative;
@@ -27,14 +26,31 @@ export const TextWrap = styled.div`
         font-size: 60px;
         word-break: keep-all;
         text-align: left;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.4;
-        margin-bottom: 30px;
+        position: absolute;
+        left: 0;
+        top: 150px;
+        opacity: 0;
+        transition: 0.5s;
+        &.on {
+            opacity: 1;
+        }
     }
     strong {
         font-size: 80px;
         font-weight: 700;
         line-height: 1.2;
+        width: 300px;
+        position: absolute;
+        left: 0;
+        top: 380px;
+        opacity: 0;
+        transition: 0.5s;
+
+        &.on {
+            opacity: 1;
+        }
     }
     .btnWrap {
         width: 190px;
@@ -57,8 +73,19 @@ export const GalleryWrap = styled.div`
     width: 1100px;
     height: 900px;
     box-sizing: border-box;
-    padding-top: 50px;
+    position: relative;
     p {
+        width: 1100px;
+        height: 850px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        transition: 0.7s;
+        opacity: 0;
+        &.on {
+            opacity: 1;
+        }
         img {
             width: 100%;
             height: 100%;

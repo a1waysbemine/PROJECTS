@@ -26,7 +26,7 @@ export const NavWrap = styled.nav`
         justify-content: center;
         align-items: center;
         li {
-            margin-right: 100px;
+            margin-right: 80px;
             cursor: pointer;
             font-size: 20px;
             font-weight: 700;
@@ -52,17 +52,23 @@ export const TopMenuBar = styled.ul`
         font-size: 17px;
         margin-right: 40px;
         cursor: pointer;
+        &:first-child {
+            cursor: auto;
+        }
         &:last-child {
             margin-right: 0;
         }
-        a {
-            &:hover {
-                font-weight: 500;
-            }
-            i {
-                font-size: 17px;
-                margin-right: 5px;
-            }
+
+        &.logout:hover,
+        &.mypage:hover,
+        &.cart:hover {
+            font-weight: 700;
+            color: #002bd2;
+        }
+
+        i {
+            font-size: 17px;
+            margin-right: 5px;
         }
     }
 `;

@@ -7,11 +7,24 @@ import VisualText from '../../components/MainVisual/VisualText';
 import { MainWrap, VisualWrap } from './MainStyle';
 import visualData from '../../assets/api/MainVisual';
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { changeCategory } from '../../store/modules/productSlice';
 
 const Main = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
     const [data, setData] = useState(visualData);
     const [visual, setVisual] = useState(data[0]);
     const [cnt, setCnt] = useState(1);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const goProduct = (idx) => {
+        dispatch(changeCategory(idx));
+        navigate('/products');
+    };
 
     const onId = (x) => {
         setCnt((old) => {
@@ -26,9 +39,6 @@ const Main = () => {
         const timer = setInterval(() => {
             setCnt(cnt >= 6 ? 1 : cnt + 1);
         }, 3000);
-
-        console.log('id : ', visual.id);
-        console.log('cnt : ', cnt);
 
         return () => {
             clearInterval(timer);
@@ -47,14 +57,14 @@ const Main = () => {
         <>
             <VisualWrap>
                 <div className="visualInner">
-                    <VisualText visual={visual} onView={onView} onId={onId} />
+                    <VisualText visual={visual} onView={onView} onId={onId} cnt={cnt} />
                     <VisualGallery visual={visual} onView={onView} cnt={cnt} />
                 </div>
             </VisualWrap>
             <MainWrap>
-                <Con1 />
-                <Con2 />
-                <Con3 />
+                <Con1 goProduct={goProduct} navigate={navigate} />
+                <Con2 goProduct={goProduct} navigate={navigate} />
+                <Con3 goProduct={goProduct} navigate={navigate} />
                 <Con4 />
             </MainWrap>
         </>
