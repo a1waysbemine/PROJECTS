@@ -11,7 +11,7 @@ const History = () => {
         <HistoryWrap>
             <div className="subInner">
                 <p className="visualImg">
-                    <img src="../images/about/history_visual.jpg" alt="" />
+                    <img src="./images/about/history_visual.jpg" alt="" />
                 </p>
                 <h2>HISTORY</h2>
                 <strong className="period">1994 - 2024</strong>
