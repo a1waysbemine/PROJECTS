@@ -64,7 +64,7 @@ const T50Detail = () => {
         <div className="products">
           <div className="bigImg">
             <img
-              src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_${thum}.png`}
+              src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_${thum}.png`}
               alt="t50"
             />
           </div>
@@ -83,12 +83,12 @@ const T50Detail = () => {
               >
                 {selectedColor === T50.color1 ? (
                   <img
-                    src={`../../images/products/colors/${T50.colorcode1}_chk.png`}
+                    src={`./images/products/colors/${T50.colorcode1}_chk.png`}
                     alt="color1"
                   />
                 ) : (
                   <img
-                    src={`../../images/products/colors/${T50.colorcode1}.png`}
+                    src={`./images/products/colors/${T50.colorcode1}.png`}
                     alt="color1"
                   />
                 )}
@@ -103,12 +103,12 @@ const T50Detail = () => {
                 >
                   {selectedColor === T50.color2 ? (
                     <img
-                      src={`../../images/products/colors/${T50.colorcode2}_chk.png`}
+                      src={`./images/products/colors/${T50.colorcode2}_chk.png`}
                       alt="color2"
                     />
                   ) : (
                     <img
-                      src={`../../images/products/colors/${T50.colorcode2}.png`}
+                      src={`./images/products/colors/${T50.colorcode2}.png`}
                       alt="color2"
                     />
                   )}
@@ -150,7 +150,7 @@ const T50Detail = () => {
           {T50.id === 4 || T50.id === 5 ? (
             <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
               <img
-                src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_1.png`}
+                src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_1.png`}
                 alt="t50"
               />
             </li>
@@ -158,13 +158,13 @@ const T50Detail = () => {
             <>
               <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
                 <img
-                  src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_1.png`}
+                  src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_1.png`}
                   alt="t50"
                 />
               </li>
               <li className={thum === 2 ? "on" : ""} onClick={() => setThum(2)}>
                 <img
-                  src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_2.png`}
+                  src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_2.png`}
                   alt="t50"
                 />
               </li>
@@ -173,31 +173,31 @@ const T50Detail = () => {
             <>
               <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
                 <img
-                  src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_1.png`}
+                  src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_1.png`}
                   alt="t50"
                 />
               </li>
               <li className={thum === 2 ? "on" : ""} onClick={() => setThum(2)}>
                 <img
-                  src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_2.png`}
+                  src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_2.png`}
                   alt="t50"
                 />
               </li>
               <li className={thum === 3 ? "on" : ""} onClick={() => setThum(3)}>
                 <img
-                  src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_3.png`}
+                  src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_3.png`}
                   alt="t50"
                 />
               </li>
               <li className={thum === 4 ? "on" : ""} onClick={() => setThum(4)}>
                 <img
-                  src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_4.png`}
+                  src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_4.png`}
                   alt="t50"
                 />
               </li>
               <li className={thum === 5 ? "on" : ""} onClick={() => setThum(5)}>
                 <img
-                  src={`../../images/products/work/t50/${T50.code}/${selectedColorCode}_5.png`}
+                  src={`./images/products/work/t50/${T50.code}/${selectedColorCode}_5.png`}
                   alt="t50"
                 />
               </li>

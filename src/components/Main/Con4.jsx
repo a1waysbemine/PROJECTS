@@ -13,7 +13,6 @@ const Con4 = () => {
                         <span>
                             <Link to="/news">전체보기</Link>
                         </span>
-                        {/* 전체보기 클릭 시 news페이지로 이동 */}
                     </p>
                 </div>
                 <div className="instaContents">
@@ -27,10 +26,8 @@ const Con4 = () => {
                                 @sidiz_korea
                             </a>
                         </strong>
-                        {/* 클릭 시 인스타그램 링크 이동 */}
                     </p>
                     <ul className="list">
-                        {/* 각 li 클릭 시 해당 인스타그램 게시물로 이동 */}
                         <li>
                             <a
                                 href="https://www.instagram.com/p/C73d3aHyAYA/?img_index=1"

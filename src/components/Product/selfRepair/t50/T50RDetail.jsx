@@ -64,7 +64,7 @@ const T50RDetail = () => {
         <div className="products">
           <div className="bigImg">
             <img
-              src={`../../images/products/selfrepair/t50r/${T50R.code}/${selectedColorCode}_${thum}.png`}
+              src={`./images/products/selfrepair/t50r/${T50R.code}/${selectedColorCode}_${thum}.png`}
               alt="t50repair"
             />
           </div>
@@ -83,12 +83,12 @@ const T50RDetail = () => {
               >
                 {selectedColor === T50R.color1 ? (
                   <img
-                    src={`../../images/products/colors/${T50R.colorcode1}_chk.png`}
+                    src={`./images/products/colors/${T50R.colorcode1}_chk.png`}
                     alt="color1"
                   />
                 ) : (
                   <img
-                    src={`../../images/products/colors/${T50R.colorcode1}.png`}
+                    src={`./images/products/colors/${T50R.colorcode1}.png`}
                     alt="color1"
                   />
                 )}
@@ -103,12 +103,12 @@ const T50RDetail = () => {
                 >
                   {selectedColor === T50R.color2 ? (
                     <img
-                      src={`../../images/products/colors/${T50R.colorcode2}_chk.png`}
+                      src={`./images/products/colors/${T50R.colorcode2}_chk.png`}
                       alt="color2"
                     />
                   ) : (
                     <img
-                      src={`../../images/products/colors/${T50R.colorcode2}.png`}
+                      src={`./images/products/colors/${T50R.colorcode2}.png`}
                       alt="color2"
                     />
                   )}
@@ -149,7 +149,7 @@ const T50RDetail = () => {
         <ul className="thum">
           <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
             <img
-              src={`../../images/products/selfrepair/t50r/${T50R.code}/${selectedColorCode}_1.png`}
+              src={`./images/products/selfrepair/t50r/${T50R.code}/${selectedColorCode}_1.png`}
               alt="t50repair"
             />
           </li>

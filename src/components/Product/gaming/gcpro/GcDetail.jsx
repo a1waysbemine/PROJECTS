@@ -63,7 +63,7 @@ const GcDetail = () => {
         <div className="products">
           <div className="bigImg">
             <img
-              src={`../../images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_${thum}.png`}
+              src={`./images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_${thum}.png`}
               alt="gcpro"
             />
           </div>
@@ -82,12 +82,12 @@ const GcDetail = () => {
               >
                 {selectedColor === GC.color1 ? (
                   <img
-                    src={`../../images/products/colors/${GC.colorcode1}_chk.png`}
+                    src={`./images/products/colors/${GC.colorcode1}_chk.png`}
                     alt="color1"
                   />
                 ) : (
                   <img
-                    src={`../../images/products/colors/${GC.colorcode1}.png`}
+                    src={`./images/products/colors/${GC.colorcode1}.png`}
                     alt="color1"
                   />
                 )}
@@ -101,12 +101,12 @@ const GcDetail = () => {
               >
                 {selectedColor === GC.color2 ? (
                   <img
-                    src={`../../images/products/colors/${GC.colorcode2}_chk.png`}
+                    src={`./images/products/colors/${GC.colorcode2}_chk.png`}
                     alt="color2"
                   />
                 ) : (
                   <img
-                    src={`../../images/products/colors/${GC.colorcode2}.png`}
+                    src={`./images/products/colors/${GC.colorcode2}.png`}
                     alt="color2"
                   />
                 )}
@@ -145,7 +145,7 @@ const GcDetail = () => {
           {GC.id === 3 ? (
             <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
               <img
-                src={`../../images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_1.png`}
+                src={`./images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_1.png`}
                 alt="gcpro"
               />
             </li>
@@ -153,19 +153,19 @@ const GcDetail = () => {
             <>
               <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
                 <img
-                  src={`../../images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_1.png`}
+                  src={`./images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_1.png`}
                   alt="gcpro"
                 />
               </li>
               <li className={thum === 2 ? "on" : ""} onClick={() => setThum(2)}>
                 <img
-                  src={`../../images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_2.png`}
+                  src={`./images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_2.png`}
                   alt="gcpro"
                 />
               </li>
               <li className={thum === 3 ? "on" : ""} onClick={() => setThum(3)}>
                 <img
-                  src={`../../images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_3.png`}
+                  src={`./images/products/gaming/gcpro/${GC.code}/${selectedColorCode}_3.png`}
                   alt="gcpro"
                 />
               </li>

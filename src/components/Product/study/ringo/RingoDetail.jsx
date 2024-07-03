@@ -64,7 +64,7 @@ const RingoDetail = () => {
         <div className="products">
           <div className="bigImg">
             <img
-              src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_${thum}.png`}
+              src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_${thum}.png`}
               alt="ringo"
             />
           </div>
@@ -83,12 +83,12 @@ const RingoDetail = () => {
               >
                 {selectedColor === RINGO.color1 ? (
                   <img
-                    src={`../../images/products/colors/${RINGO.colorcode1}_chk.png`}
+                    src={`./images/products/colors/${RINGO.colorcode1}_chk.png`}
                     alt="color1"
                   />
                 ) : (
                   <img
-                    src={`../../images/products/colors/${RINGO.colorcode1}.png`}
+                    src={`./images/products/colors/${RINGO.colorcode1}.png`}
                     alt="color1"
                   />
                 )}
@@ -103,12 +103,12 @@ const RingoDetail = () => {
                 >
                   {selectedColor === RINGO.color2 ? (
                     <img
-                      src={`../../images/products/colors/${RINGO.colorcode2}_chk.png`}
+                      src={`./images/products/colors/${RINGO.colorcode2}_chk.png`}
                       alt="color2"
                     />
                   ) : (
                     <img
-                      src={`../../images/products/colors/${RINGO.colorcode2}.png`}
+                      src={`./images/products/colors/${RINGO.colorcode2}.png`}
                       alt="color2"
                     />
                   )}
@@ -151,19 +151,19 @@ const RingoDetail = () => {
             <>
               <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
                 <img
-                  src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_1.png`}
+                  src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_1.png`}
                   alt="ringo"
                 />
               </li>
               <li className={thum === 2 ? "on" : ""} onClick={() => setThum(2)}>
                 <img
-                  src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_2.png`}
+                  src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_2.png`}
                   alt="ringo"
                 />
               </li>
               <li className={thum === 3 ? "on" : ""} onClick={() => setThum(3)}>
                 <img
-                  src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_3.png`}
+                  src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_3.png`}
                   alt="ringo"
                 />
               </li>
@@ -171,7 +171,7 @@ const RingoDetail = () => {
           ) : RINGO.id === 1 ? (
             <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
               <img
-                src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_1.png`}
+                src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_1.png`}
                 alt="ringo"
               />
             </li>
@@ -179,31 +179,31 @@ const RingoDetail = () => {
             <>
               <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
                 <img
-                  src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_1.png`}
+                  src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_1.png`}
                   alt="ringo"
                 />
               </li>
               <li className={thum === 2 ? "on" : ""} onClick={() => setThum(2)}>
                 <img
-                  src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_2.png`}
+                  src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_2.png`}
                   alt="ringo"
                 />
               </li>
               <li className={thum === 3 ? "on" : ""} onClick={() => setThum(3)}>
                 <img
-                  src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_3.png`}
+                  src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_3.png`}
                   alt="ringo"
                 />
               </li>
               <li className={thum === 4 ? "on" : ""} onClick={() => setThum(4)}>
                 <img
-                  src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_4.png`}
+                  src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_4.png`}
                   alt="ringo"
                 />
               </li>
               <li className={thum === 5 ? "on" : ""} onClick={() => setThum(5)}>
                 <img
-                  src={`../../images/products/study/ringo/${RINGO.code}/${selectedColorCode}_5.png`}
+                  src={`./images/products/study/ringo/${RINGO.code}/${selectedColorCode}_5.png`}
                   alt="ringo"
                 />
               </li>

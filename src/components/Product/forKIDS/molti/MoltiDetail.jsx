@@ -64,7 +64,7 @@ const MoltiDetail = () => {
         <div className="products">
           <div className="bigImg">
             <img
-              src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_${thum}.png`}
+              src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_${thum}.png`}
               alt="molti"
             />
           </div>
@@ -83,12 +83,12 @@ const MoltiDetail = () => {
               >
                 {selectedColor === MOLTI.color1 ? (
                   <img
-                    src={`../../images/products/colors/${MOLTI.colorcode1}_chk.png`}
+                    src={`./images/products/colors/${MOLTI.colorcode1}_chk.png`}
                     alt="color1"
                   />
                 ) : (
                   <img
-                    src={`../../images/products/colors/${MOLTI.colorcode1}.png`}
+                    src={`./images/products/colors/${MOLTI.colorcode1}.png`}
                     alt="color1"
                   />
                 )}
@@ -103,12 +103,12 @@ const MoltiDetail = () => {
                 >
                   {selectedColor === MOLTI.color2 ? (
                     <img
-                      src={`../../images/products/colors/${MOLTI.colorcode2}_chk.png`}
+                      src={`./images/products/colors/${MOLTI.colorcode2}_chk.png`}
                       alt="color2"
                     />
                   ) : (
                     <img
-                      src={`../../images/products/colors/${MOLTI.colorcode2}.png`}
+                      src={`./images/products/colors/${MOLTI.colorcode2}.png`}
                       alt="color2"
                     />
                   )}
@@ -151,19 +151,19 @@ const MoltiDetail = () => {
             <>
               <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_1.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_1.png`}
                   alt="molti"
                 />
               </li>
               <li className={thum === 2 ? "on" : ""} onClick={() => setThum(2)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_2.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_2.png`}
                   alt="molti"
                 />
               </li>
               <li className={thum === 3 ? "on" : ""} onClick={() => setThum(3)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_3.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_3.png`}
                   alt="molti"
                 />
               </li>
@@ -172,13 +172,13 @@ const MoltiDetail = () => {
             <>
               <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_1.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_1.png`}
                   alt="molti"
                 />
               </li>
               <li className={thum === 2 ? "on" : ""} onClick={() => setThum(2)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_2.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_2.png`}
                   alt="molti"
                 />
               </li>
@@ -187,31 +187,31 @@ const MoltiDetail = () => {
             <>
               <li className={thum === 1 ? "on" : ""} onClick={() => setThum(1)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_1.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_1.png`}
                   alt="molti"
                 />
               </li>
               <li className={thum === 2 ? "on" : ""} onClick={() => setThum(2)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_2.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_2.png`}
                   alt="molti"
                 />
               </li>
               <li className={thum === 3 ? "on" : ""} onClick={() => setThum(3)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_3.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_3.png`}
                   alt="molti"
                 />
               </li>
               <li className={thum === 4 ? "on" : ""} onClick={() => setThum(4)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_4.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_4.png`}
                   alt="molti"
                 />
               </li>
               <li className={thum === 5 ? "on" : ""} onClick={() => setThum(5)}>
                 <img
-                  src={`../../images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_5.png`}
+                  src={`./images/products/forkids/molti/${MOLTI.code}/${selectedColorCode}_5.png`}
                   alt="molti"
                 />
               </li>
