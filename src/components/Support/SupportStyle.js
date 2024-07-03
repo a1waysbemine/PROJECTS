@@ -289,7 +289,7 @@ export const RequestWrap = styled.div`
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: cover;
-        background-image: url(../images/support/as_visual.png);
+        background-image: url(./images/support/as_visual.png);
         h3 {
             font-size: 30px;
             font-weight: 500;
