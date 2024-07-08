@@ -2,6 +2,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FooterWrap } from './FooterStyle';
 import { useDispatch } from 'react-redux';
 import { changeCategory } from '../../store/modules/productSlice';
+import { changeSupportCategory } from '../../store/modules/supportSlice';
+import { changeAboutCategory } from '../../store/modules/aboutSlice';
 
 const Footer = () => {
     const dispatch = useDispatch();
@@ -10,6 +12,14 @@ const Footer = () => {
     const goCategory = (idx) => {
         dispatch(changeCategory(idx));
         navigate('/products');
+    };
+    const supportCategory = (category) => {
+        dispatch(changeSupportCategory(category));
+        navigate('/support');
+    };
+    const aboutCategory = (category) => {
+        dispatch(changeAboutCategory(category));
+        navigate('/about');
     };
 
     return (
@@ -45,14 +55,21 @@ const Footer = () => {
                     <li className="menu">
                         투자정보
                         <ul>
-                            <li>공고·IR</li>
+                            <li
+                                onClick={() =>
+                                    window.open('https://kr.sidiz.com/ir/noticeList?page=1')
+                                }
+                            >
+                                공고·IR
+                            </li>
                         </ul>
                     </li>
                     <li className="menu">
                         ABOUT SIDIZ
                         <ul>
-                            <li>BRAND STORY</li>
-                            <li>NEWS</li>
+                            <li onClick={() => aboutCategory('BRAND STORY')}>BRAND STORY</li>
+                            <li onClick={() => aboutCategory('HISTORY')}>HISTORY</li>
+                            <li onClick={() => aboutCategory('NEWS')}>NEWS</li>
                         </ul>
                     </li>
                     <li className="menu">
@@ -70,11 +87,11 @@ const Footer = () => {
                     <li className="menu">
                         SUPPORT
                         <ul>
-                            <li>FAQ</li>
-                            <li>친절상담</li>
-                            <li>A/S신청</li>
-                            <li>A/S안내</li>
-                            <li>매장 찾기</li>
+                            <li onClick={() => supportCategory('FAQ')}>FAQ</li>
+                            <li onClick={() => supportCategory('친절상담')}>친절상담</li>
+                            <li onClick={() => supportCategory('A/S 안내')}>A/S안내</li>
+                            <li onClick={() => supportCategory('A/S 신청')}>A/S신청</li>
+                            <li onClick={() => supportCategory('매장 찾기')}>매장 찾기</li>
                         </ul>
                     </li>
                     <li className="menu">

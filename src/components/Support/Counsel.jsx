@@ -2,6 +2,7 @@ import { CounselForm, CounselWrap } from './SupportStyle';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { counselToMypage } from '../../store/modules/supportSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Counsel = () => {
     useEffect(() => {
@@ -17,13 +18,15 @@ const Counsel = () => {
         title: '',
         files: [],
         details: '',
+        categorize: '',
     });
+    const { email, title, details, categorize } = form;
 
     const chkRef = useRef();
 
     const changeInput = (e) => {
         const { name, value } = e.target;
-        setForm({ ...form, [name]: value });
+        setForm({ ...form, [name]: value, categorize: category });
     };
     const fileRef = useRef();
     const changeFileInput = (e) => {
@@ -38,6 +41,7 @@ const Counsel = () => {
         setCategory(category);
     };
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -57,13 +61,14 @@ const Counsel = () => {
             alert('입력되지 않은 항목이 있습니다.');
             return;
         }
-        dispatch(counselToMypage({ ...form, category }));
+        dispatch(counselToMypage(form));
         setForm({ name: '', email: '', tel: '', title: '', files: [], details: '' });
         setChkbox(false);
         setCategory('');
         fileRef.current.value = '';
         detailsRef.current.innerText = '';
         alert('상담 신청이 완료되었습니다');
+        navigate('/mypage');
     };
 
     return (

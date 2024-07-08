@@ -5,7 +5,7 @@ import CounselList from '../../components/Mypage/CounselList';
 import AS_List from '../../components/Mypage/AS_List';
 
 const MyPage = () => {
-    const [onTab, setOnTab] = useState(0);
+    const [onTab, setOnTab] = useState('주문조회');
     const onSubTab = (x) => {
         setOnTab(x);
     };
@@ -14,20 +14,29 @@ const MyPage = () => {
             <TabMenu>
                 <strong>마이페이지</strong>
                 <ul className="tab">
-                    <li onClick={() => onSubTab(0)} className={onTab === 0 ? 'on' : ''}>
+                    <li
+                        onClick={() => onSubTab('주문조회')}
+                        className={onTab === '주문조회' ? 'on' : ''}
+                    >
                         주문조회
                     </li>
-                    <li onClick={() => onSubTab(1)} className={onTab === 1 ? 'on' : ''}>
+                    <li
+                        onClick={() => onSubTab('상담내역')}
+                        className={onTab === '상담내역' ? 'on' : ''}
+                    >
                         상담내역
                     </li>
-                    <li onClick={() => onSubTab(2)} className={onTab === 2 ? 'on' : ''}>
+                    <li
+                        onClick={() => onSubTab('A/S신청내역')}
+                        className={onTab === 'A/S신청내역' ? 'on' : ''}
+                    >
                         A/S신청내역
                     </li>
                 </ul>
             </TabMenu>
-            {onTab === 0 && <OrderList />}
-            {onTab === 1 && <CounselList />}
-            {onTab === 2 && <AS_List />}
+            {onTab === '주문조회' && <OrderList />}
+            {onTab === '상담내역' && <CounselList />}
+            {onTab === 'A/S신청내역' && <AS_List />}
         </>
     );
 };

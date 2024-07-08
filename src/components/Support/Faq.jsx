@@ -10,6 +10,9 @@ import {
 
 const Faq = () => {
     useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
+    useEffect(() => {
         dispatch(resetFiltering());
     }, []);
 
@@ -17,12 +20,10 @@ const Faq = () => {
     const dispatch = useDispatch();
     const [onClass, setOnClass] = useState(0);
 
-    // FAQ 항목을 보여줌 (isShow 토글)
     const onShow = (id) => {
         dispatch(toggleFaqVisibility(id));
     };
 
-    // 필터링 및 초기화
     const reset = () => {
         dispatch(resetFiltering());
         setOnClass(0);

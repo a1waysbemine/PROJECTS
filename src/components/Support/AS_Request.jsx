@@ -1,6 +1,8 @@
 import { ASRequestForm, RequestWrap } from './SupportStyle';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { asToMypage } from '../../store/modules/supportSlice';
 
 const AS_Request = () => {
     useEffect(() => {
@@ -20,11 +22,13 @@ const AS_Request = () => {
         files: [],
         details: '',
         buyRoot: '',
+        categorize: '',
     });
+    const { email, details, categorize } = form;
 
     const changeInput = (e) => {
         const { name, value } = e.target;
-        setForm({ ...form, [name]: value });
+        setForm({ ...form, [name]: value, categorize: category });
     };
     const fileRef = useRef();
     const dateRef = useRef();
@@ -32,6 +36,7 @@ const AS_Request = () => {
     const chkRef = useRef();
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const changeFileInput = (e) => {
         setForm({ ...form, files: [...e.target.files] });
@@ -63,6 +68,7 @@ const AS_Request = () => {
             alert('입력되지 않은 항목이 있습니다.');
             return;
         }
+        dispatch(asToMypage(form));
         setForm({
             name: '',
             email: '',
@@ -81,6 +87,7 @@ const AS_Request = () => {
         detailsRef.current.innerText = '';
         dateRef.current.value = '';
         alert('A/S신청이 완료되었습니다');
+        navigate('/mypage');
     };
 
     return (

@@ -15,7 +15,7 @@ const CounselBox = () => {
             <tbody>
                 {mypageCounsel.map((item) => (
                     <tr key={item.id}>
-                        <td className="category">{item.category}</td>
+                        <td className="category">{item.categorize}</td>
                         <td className="title">{item.title}</td>
                         <td className="details">{item.details}</td>
                     </tr>

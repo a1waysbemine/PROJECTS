@@ -1,7 +1,7 @@
 import { ASNoticeWrap } from './SupportStyle';
 import { useEffect } from 'react';
 
-const AS_Notice = ({ setOnClass }) => {
+const AS_Notice = ({ categorize }) => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
@@ -100,7 +100,7 @@ const AS_Notice = ({ setOnClass }) => {
                         </span>
                     </p>
                 </div>
-                <button onClick={() => setOnClass(3)}>온라인 A/S 신청</button>
+                <button onClick={() => categorize('A/S 신청')}>온라인 A/S 신청</button>
             </div>
         </ASNoticeWrap>
     );

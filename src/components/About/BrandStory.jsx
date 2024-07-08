@@ -2,7 +2,7 @@ import { BrandStoryWrap } from './AboutStyle';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-const BrandStory = ({ setOnTab }) => {
+const BrandStory = ({ categorize }) => {
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
@@ -84,7 +84,7 @@ const BrandStory = ({ setOnTab }) => {
                     <p className="txt">
                         좋은 의자를 만들겠다는 일념으로 출발한 시디즈는
                         <br />삶 속에 편안함의 가치를 창조하기 위해 노력해왔습니다.
-                        <span onClick={() => setOnTab(1)}>시디즈의 역사 보러가기</span>
+                        <span onClick={() => categorize('HISTORY')}>시디즈의 역사 보러가기</span>
                     </p>
                 </div>
             </div>

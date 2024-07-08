@@ -15,7 +15,7 @@ const AS_ListBox = () => {
             <tbody>
                 {mypageAS.map((item) => (
                     <tr key={item.id}>
-                        <td className="category">{item.category}</td>
+                        <td className="category">{item.categorize}</td>
                         <td className="details">{item.details}</td>
                         <td className="done">{item.done ? '처리완료' : '처리중'}</td>
                     </tr>

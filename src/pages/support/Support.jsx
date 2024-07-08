@@ -1,42 +1,62 @@
-import { useState } from 'react';
 import AS_Request from '../../components/Support/AS_Request';
 import Counsel from '../../components/Support/Counsel';
 import Faq from '../../components/Support/Faq';
 import { TabMenu } from './SupportStyle';
 import FindStore from '../../components/Support/FindStore';
 import AS_Notice from '../../components/Support/AS_Notice';
+import { useDispatch, useSelector } from 'react-redux';
+import { changeSupportCategory } from '../../store/modules/supportSlice';
 
 const Support = () => {
-    const [onClass, setOnClass] = useState(0);
+    const { category } = useSelector((state) => state.support);
+    const dispatch = useDispatch();
+    const categorize = (category) => {
+        dispatch(changeSupportCategory(category));
+    };
 
     return (
         <>
             <TabMenu>
                 <strong>고객센터</strong>
                 <ul className="tab">
-                    <li onClick={() => setOnClass(0)} className={onClass === 0 ? 'on' : ''}>
+                    <li
+                        onClick={() => categorize('FAQ')}
+                        className={category === 'FAQ' ? 'on' : ''}
+                    >
                         FAQ
                     </li>
-                    <li onClick={() => setOnClass(1)} className={onClass === 1 ? 'on' : ''}>
+                    <li
+                        onClick={() => categorize('친절상담')}
+                        className={category === '친절상담' ? 'on' : ''}
+                    >
                         친절상담
                     </li>
-                    <li onClick={() => setOnClass(2)} className={onClass === 2 ? 'on' : ''}>
+                    <li
+                        onClick={() => categorize('A/S 안내')}
+                        className={category === 'A/S 안내' ? 'on' : ''}
+                    >
                         A/S 안내
                     </li>
-                    <li onClick={() => setOnClass(3)} className={onClass === 3 ? 'on' : ''}>
+                    <li
+                        onClick={() => categorize('A/S 신청')}
+                        className={category === 'A/S 신청' ? 'on' : ''}
+                    >
                         A/S 신청
                     </li>
-                    <li onClick={() => setOnClass(4)} className={onClass === 4 ? 'on' : ''}>
+                    <li
+                        onClick={() => categorize('매장 찾기')}
+                        className={category === '매장 찾기' ? 'on' : ''}
+                    >
                         매장 찾기
                     </li>
                 </ul>
             </TabMenu>
 
-            {onClass === 0 && <Faq />}
-            {onClass === 1 && <Counsel />}
-            {onClass === 2 && <AS_Notice setOnClass={setOnClass} />}
-            {onClass === 3 && <AS_Request />}
-            {onClass === 4 && <FindStore />}
+            {category === 'FAQ' && <Faq />}
+            {category === '친절상담' && <Counsel />}
+            {category === 'A/S 안내' && <AS_Notice categorize={categorize} />}
+            {category === 'A/S 신청' && <AS_Request />}
+            {category === '매장 찾기' && <FindStore />}
         </>
     );
 };
