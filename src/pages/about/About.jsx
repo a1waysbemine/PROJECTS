@@ -10,7 +10,7 @@ const About = () => {
         window.scrollTo({ top: 0 });
     }, []);
 
-    const { category } = useSelector((state) => state.about);
+    const { aboutCategory } = useSelector((state) => state.about);
     const dispatch = useDispatch();
     const categorize = (category) => {
         dispatch(changeAboutCategory(category));
@@ -22,27 +22,27 @@ const About = () => {
                 <ul className="tab">
                     <li
                         onClick={() => categorize('BRAND STORY')}
-                        className={category === 'BRAND STORY' ? 'on' : ''}
+                        className={aboutCategory === 'BRAND STORY' ? 'on' : ''}
                     >
                         BRAND STORY
                     </li>
                     <li
                         onClick={() => categorize('HISTORY')}
-                        className={category === 'HISTORY' ? 'on' : ''}
+                        className={aboutCategory === 'HISTORY' ? 'on' : ''}
                     >
                         HISTORY
                     </li>
                     <li
                         onClick={() => categorize('NEWS')}
-                        className={category === 'NEWS' ? 'on' : ''}
+                        className={aboutCategory === 'NEWS' ? 'on' : ''}
                     >
                         NEWS
                     </li>
                 </ul>
             </TabMenu>
-            {category === 'BRAND STORY' && <BrandStory categorize={categorize} />}
-            {category === 'HISTORY' && <History />}
-            {category === 'NEWS' && <News />}
+            {aboutCategory === 'BRAND STORY' && <BrandStory categorize={categorize} />}
+            {aboutCategory === 'HISTORY' && <History />}
+            {aboutCategory === 'NEWS' && <News />}
         </>
     );
 };

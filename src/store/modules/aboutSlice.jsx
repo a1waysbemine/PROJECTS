@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    category: 'BRAND STORY',
+    aboutCategory: 'BRAND STORY',
 };
 
 export const aboutSlice = createSlice({
@@ -9,7 +9,7 @@ export const aboutSlice = createSlice({
     initialState,
     reducers: {
         changeAboutCategory: (state, action) => {
-            state.category = action.payload;
+            state.aboutCategory = action.payload;
         },
     },
 });

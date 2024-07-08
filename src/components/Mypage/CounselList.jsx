@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import CounselBox from './CounselBox';
 import { CounselListWrap } from './MypageStyle';
 
 const CounselList = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
+
     return (
         <CounselListWrap>
             <div className="subInner">

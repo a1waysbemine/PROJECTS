@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom';
 import { NavWrap } from './HeaderStyle';
 import { useDispatch } from 'react-redux';
 import { changeCategory } from '../../store/modules/productSlice';
+import { changeAboutCategory } from '../../store/modules/aboutSlice';
 
 const NavBar = () => {
     const dispatch = useDispatch();
+
     return (
         <NavWrap>
             <ul className="gnb">
-                <li>
+                <li onClick={() => dispatch(changeAboutCategory('BRAND STORY'))}>
                     <Link to={'/about'}>ABOUT</Link>
                 </li>
 

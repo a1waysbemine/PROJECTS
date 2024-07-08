@@ -1,7 +1,7 @@
 import { CounselForm, CounselWrap } from './SupportStyle';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { counselToMypage } from '../../store/modules/supportSlice';
+import { counselToMypage, changeMypageCategory } from '../../store/modules/supportSlice';
 import { useNavigate } from 'react-router-dom';
 
 const Counsel = () => {
@@ -69,6 +69,7 @@ const Counsel = () => {
         detailsRef.current.innerText = '';
         alert('상담 신청이 완료되었습니다');
         navigate('/mypage');
+        changeMypageCategory('상담내역');
     };
 
     return (

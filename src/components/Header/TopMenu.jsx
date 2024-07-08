@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { TopMenuBar } from './HeaderStyle';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../store/modules/authSlice';
+import { changeMypageCategory } from '../../store/modules/supportSlice';
 
 const TopMenu = () => {
     const { authed, user } = useSelector((state) => state.auth);
@@ -36,7 +37,12 @@ const TopMenu = () => {
                     <li onClick={onLogout} className="logout">
                         로그아웃
                     </li>
-                    <li className="mypage" onClick={() => navigate('/mypage')}>
+                    <li
+                        className="mypage"
+                        onClick={() => (
+                            navigate('/mypage'), dispatch(changeMypageCategory('주문조회'))
+                        )}
+                    >
                         마이페이지
                     </li>
                 </>

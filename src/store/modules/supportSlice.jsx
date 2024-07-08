@@ -2,7 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 import faqList from '../../assets/api/Support';
 
 const initialState = {
-    category: 'FAQ',
+    supportCategory: 'FAQ',
+    mypageCategory: '주문조회',
     faqLists: faqList,
     mypageCounsel: localStorage.getItem('mypageCounsel')
         ? JSON.parse(localStorage.getItem('mypageCounsel'))
@@ -35,7 +36,10 @@ export const supportSlice = createSlice({
     initialState,
     reducers: {
         changeSupportCategory: (state, action) => {
-            state.category = action.payload;
+            state.supportCategory = action.payload;
+        },
+        changeMypageCategory: (state, action) => {
+            state.mypageCategory = action.payload;
         },
         filteringList: (state, action) => {
             state.faqLists = faqList.filter((listItem) => listItem.category === action.payload);
@@ -77,6 +81,7 @@ export const supportSlice = createSlice({
 
 export const {
     changeSupportCategory,
+    changeMypageCategory,
     filteringList,
     resetFiltering,
     counselToMypage,

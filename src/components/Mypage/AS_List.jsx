@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import AS_ListBox from './AS_ListBox';
 import { AS_ListWrap } from './MypageStyle';
 
 const AS_List = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
+
     return (
         <AS_ListWrap>
             <div className="subInner">

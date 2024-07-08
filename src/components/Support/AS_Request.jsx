@@ -2,7 +2,7 @@ import { ASRequestForm, RequestWrap } from './SupportStyle';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { asToMypage } from '../../store/modules/supportSlice';
+import { asToMypage, changeMypageCategory } from '../../store/modules/supportSlice';
 
 const AS_Request = () => {
     useEffect(() => {
@@ -88,6 +88,7 @@ const AS_Request = () => {
         dateRef.current.value = '';
         alert('A/S신청이 완료되었습니다');
         navigate('/mypage');
+        dispatch(changeMypageCategory('A/S신청내역'));
     };
 
     return (
