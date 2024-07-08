@@ -43,12 +43,12 @@ const Support = () => {
                     >
                         A/S 신청
                     </li>
-                    <li
+                    {/* <li
                         onClick={() => categorize('매장 찾기')}
                         className={supportCategory === '매장 찾기' ? 'on' : ''}
                     >
                         매장 찾기
-                    </li>
+                    </li> */}
                 </ul>
             </TabMenu>
 
@@ -56,7 +56,7 @@ const Support = () => {
             {supportCategory === '친절상담' && <Counsel />}
             {supportCategory === 'A/S 안내' && <AS_Notice categorize={categorize} />}
             {supportCategory === 'A/S 신청' && <AS_Request />}
-            {supportCategory === '매장 찾기' && <FindStore />}
+            {/* {supportCategory === '매장 찾기' && <FindStore />} */}
         </>
     );
 };
