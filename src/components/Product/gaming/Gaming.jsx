@@ -9,7 +9,7 @@ const Gaming = () => {
                 <ul>
                     <li>
                         <Link to={'/products/gc_pro'}>
-                            <img src="../images/products/gaming/gcpro.jpeg" alt="gcpro" />
+                            <img src="./images/products/gaming/gcpro.jpeg" alt="gcpro" />
                         </Link>
                     </li>
                     <li>
