@@ -9,12 +9,12 @@ const SeatBooster = () => {
                 <ul>
                     <li>
                         <Link to={'/products/STEPO'}>
-                            <img src="./images/products/seatbooster/stepo.jpeg" alt="stepo" />
+                            <img src="../images/products/seatbooster/stepo.jpeg" alt="stepo" />
                         </Link>
                     </li>
                     <li>
                         <Link to={'/products/FUNGUS'}>
-                            <img src="./images/products/seatbooster/fungus.jpeg" alt="fungus" />
+                            <img src="../images/products/seatbooster/fungus.jpeg" alt="fungus" />
                         </Link>
                     </li>
                 </ul>
