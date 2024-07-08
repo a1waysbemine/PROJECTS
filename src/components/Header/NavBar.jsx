@@ -3,6 +3,7 @@ import { NavWrap } from './HeaderStyle';
 import { useDispatch } from 'react-redux';
 import { changeCategory } from '../../store/modules/productSlice';
 import { changeAboutCategory } from '../../store/modules/aboutSlice';
+import { changeSupportCategory } from '../../store/modules/supportSlice';
 
 const NavBar = () => {
     const dispatch = useDispatch();
@@ -18,7 +19,11 @@ const NavBar = () => {
                     <Link to={'/products'}>PRODUCTS</Link>
                 </li>
 
-                <li>
+                <li
+                    onClick={() => {
+                        dispatch(changeSupportCategory('FAQ'));
+                    }}
+                >
                     <Link to={'/support'}>SUPPORT</Link>
                 </li>
                 <li>

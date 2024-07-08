@@ -104,7 +104,7 @@ export const CounselWrap = styled.div`
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: cover;
-        background-image: url(../images/support/counsel_visual.png);
+        background-image: url(./images/support/counsel_visual.png);
         padding-left: 300px;
         display: flex;
         flex-direction: column;
