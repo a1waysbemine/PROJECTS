@@ -2,7 +2,6 @@ import AS_Request from '../../components/Support/AS_Request';
 import Counsel from '../../components/Support/Counsel';
 import Faq from '../../components/Support/Faq';
 import { TabMenu } from './SupportStyle';
-import FindStore from '../../components/Support/FindStore';
 import AS_Notice from '../../components/Support/AS_Notice';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeSupportCategory } from '../../store/modules/supportSlice';
@@ -43,12 +42,6 @@ const Support = () => {
                     >
                         A/S 신청
                     </li>
-                    {/* <li
-                        onClick={() => categorize('매장 찾기')}
-                        className={supportCategory === '매장 찾기' ? 'on' : ''}
-                    >
-                        매장 찾기
-                    </li> */}
                 </ul>
             </TabMenu>
 
@@ -56,7 +49,6 @@ const Support = () => {
             {supportCategory === '친절상담' && <Counsel />}
             {supportCategory === 'A/S 안내' && <AS_Notice categorize={categorize} />}
             {supportCategory === 'A/S 신청' && <AS_Request />}
-            {/* {supportCategory === '매장 찾기' && <FindStore />} */}
         </>
     );
 };

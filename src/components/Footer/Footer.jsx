@@ -91,7 +91,6 @@ const Footer = () => {
                             <li onClick={() => supportCategory('친절상담')}>친절상담</li>
                             <li onClick={() => supportCategory('A/S 안내')}>A/S안내</li>
                             <li onClick={() => supportCategory('A/S 신청')}>A/S신청</li>
-                            <li onClick={() => supportCategory('매장 찾기')}>매장 찾기</li>
                         </ul>
                     </li>
                     <li className="menu">
