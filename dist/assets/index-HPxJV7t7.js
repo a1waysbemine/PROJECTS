@@ -419,261 +419,261 @@ table {
     }
   }
 `,ky=()=>{const e=R(),t=z(),r=i=>{e(gt(i)),t("/products")},o=i=>{e(zm(i)),t("/support")},s=i=>{e(wa(i)),t("/about")};return n.jsx(vy,{children:n.jsxs("div",{className:"inner",children:[n.jsx(C,{to:"/main",children:n.jsx("h1",{children:n.jsx("img",{src:"./images/main/footer_logo.png",alt:""})})}),n.jsxs("ul",{className:"info",children:[n.jsxs("li",{children:["Copyright (c) 2019 SIDIZ, INC.",n.jsx("br",{}),"All rights reserved."]}),n.jsx("li",{children:"(주)시디즈"}),n.jsx("li",{children:"대표이사 · 강성문 경기도 평택시 세교산단로 67-20 (세교동)"}),n.jsxs("li",{children:["사업자등록번호 · 215-87-48121",n.jsx("br",{}),"통신판매신고번호 · 2018-경기평택-0099",n.jsx("br",{}),"부가통신사업신고필증 · 022094"]}),n.jsxs("li",{children:["FAX · 02-3400-4800",n.jsx("br",{}),"개인정보관리책임자 · 강성문 I sidiz_official@fursys.com"]})]}),n.jsxs("ul",{className:"footerMenu",children:[n.jsxs("li",{className:"menu",children:["투자정보",n.jsx("ul",{children:n.jsx("li",{onClick:()=>window.open("https://kr.sidiz.com/ir/noticeList?page=1"),children:"공고·IR"})})]}),n.jsxs("li",{className:"menu",children:["ABOUT SIDIZ",n.jsxs("ul",{children:[n.jsx("li",{onClick:()=>s("BRAND STORY"),children:"BRAND STORY"}),n.jsx("li",{onClick:()=>s("HISTORY"),children:"HISTORY"}),n.jsx("li",{onClick:()=>s("NEWS"),children:"NEWS"})]})]}),n.jsxs("li",{className:"menu",children:["제품",n.jsxs("ul",{children:[n.jsx("li",{onClick:()=>r(0),children:"WORK"}),n.jsx("li",{onClick:()=>r(1),children:"WORK & MORE"}),n.jsx("li",{onClick:()=>r(2),children:"GAMING"}),n.jsx("li",{onClick:()=>r(3),children:"STUDY"}),n.jsx("li",{onClick:()=>r(4),children:"for KIDS"}),n.jsx("li",{onClick:()=>r(5),children:"SEAT BOOSTER"}),n.jsx("li",{onClick:()=>r(6),children:"SELF-REPAIR"})]})]}),n.jsxs("li",{className:"menu",children:["SUPPORT",n.jsxs("ul",{children:[n.jsx("li",{onClick:()=>o("FAQ"),children:"FAQ"}),n.jsx("li",{onClick:()=>o("친절상담"),children:"친절상담"}),n.jsx("li",{onClick:()=>o("A/S 안내"),children:"A/S안내"}),n.jsx("li",{onClick:()=>o("A/S 신청"),children:"A/S신청"}),n.jsx("li",{onClick:()=>o("매장 찾기"),children:"매장 찾기"})]})]}),n.jsxs("li",{className:"menu",children:["컨택센터",n.jsxs("ul",{className:"time",children:[n.jsx("li",{children:"1577 - 5674"}),n.jsx("li",{children:"평일 | 09:30 - 17:30"}),n.jsx("li",{children:"토요일 | 09:30 - 12:30"}),n.jsx("li",{children:"일요일, 공휴일 휴무"})]})]})]})]})})},wy=()=>n.jsxs("div",{className:"wrap",children:[n.jsx(yy,{}),n.jsx("main",{className:"main",children:n.jsx(v0,{})}),n.jsx(ky,{})]}),Cy=A.div`
-  width: 100%;
-  border-bottom: 2px solid #dcdcdc;
-  .inner {
-    width: 1400px;
-    padding: 100px 0;
-  }
-  h2 {
-    font-size: 45px;
-    line-height: 1;
-    margin-bottom: 30px;
-  }
-  .more {
-    display: block;
-    text-align: right;
-    margin-bottom: 30px;
-    font-size: 18px;
-    cursor: pointer;
-    color: #002bd2;
-  }
-  .list {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    li {
-      width: 600px;
-      margin-bottom: 100px;
-      img {
-        width: 600px;
-        cursor: pointer;
-      }
-      h3 {
-        text-align: center;
-        font-size: 50px;
-        font-weight: 600;
-        margin-top: 10px;
-      }
-      strong {
-        display: block;
-        text-align: center;
-        font-size: 25px;
-      }
+    border-bottom: 2px solid #dcdcdc;
+    .inner {
+        width: 1400px;
+        padding: 100px 0;
     }
-  }
-`,Ny=A.div`
-  width: 100%;
-  border-bottom: 2px solid #dcdcdc;
-  .inner {
-    width: 1400px;
-    padding: 100px 0;
-  }
-  h2 {
-    font-size: 30px;
-    line-height: 1;
-    margin-bottom: 30px;
-  }
-  .more {
-    display: block;
-    text-align: right;
-    margin-bottom: 30px;
-    font-size: 18px;
-    cursor: pointer;
-    color: #002bd2;
-  }
-  .list {
-    display: flex;
-    justify-content: space-between;
-    li {
-      width: 380px;
-      img {
-        width: 380px;
-        cursor: pointer;
-      }
-      h3 {
-        font-size: 30px;
-        font-weight: 600;
-        margin-top: 10px;
-        text-align: center;
-      }
-      strong {
-        display: block;
-        text-align: center;
-        font-size: 18px;
-      }
-    }
-  }
-`,Sy=A.div`
-  width: 100%;
-  .inner {
-    width: 1400px;
-    padding: 100px 0;
-  }
-  h2 {
-    font-size: 30px;
-    line-height: 1;
-    margin-bottom: 30px;
-  }
-  .more {
-    display: block;
-    text-align: right;
-    margin-bottom: 30px;
-    font-size: 18px;
-    cursor: pointer;
-    color: #002bd2;
-  }
-  .list {
-    display: flex;
-    justify-content: space-between;
-    li {
-      width: 380px;
-      img {
-        width: 380px;
-        cursor: pointer;
-      }
-      h3 {
-        font-size: 30px;
-        font-weight: 600;
-        margin-top: 10px;
-        text-align: center;
-      }
-      strong {
-        display: block;
-        text-align: center;
-        font-size: 18px;
-      }
-    }
-  }
-`,by=A.div`
-  width: 100%;
-  background: #f5f5f5;
-  .inner {
-    width: 1400px;
-    padding: 100px 0;
-  }
-  .news {
-    display: flex;
-    margin-bottom: 100px;
-    p {
-      height: 80px;
-      line-height: 80px;
-      &:first-child {
-        width: 200px;
-        background: #002bd2;
-        color: #fff;
-        font-size: 20px;
-        text-align: center;
-      }
-      &:last-child {
-        width: 1200px;
-        background: #dde6ff;
-        padding-left: 300px;
-        font-size: 20px;
-        font-weight: 600;
-        position: relative;
-        em {
-          font-size: 17px;
-          font-weight: 400;
-          padding-left: 30px;
-        }
-        span {
-          font-size: 17px;
-          text-decoration: underline;
-          position: absolute;
-          right: 30px;
-          bottom: 0;
-          font-weight: 500;
-          cursor: pointer;
-          a {
-            &:hover {
-              text-decoration: underline;
-              color: #002bd2;
-            }
-          }
-        }
-      }
-    }
-  }
-  .instaContents {
-    p {
-      display: flex;
-      align-items: center;
-      margin-bottom: 50px;
-      span {
-        width: 70px;
-        height: 70px;
-        display: block;
-        border-radius: 100%;
-        background-image: url(../images/main/con4_sidiz.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-right: 20px;
-      }
-      strong {
-        display: block;
-        font-size: 20px;
-        font-weight: 500;
-        cursor: pointer;
-      }
-    }
-    .list {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 100px;
-      li {
-        width: 250px;
-        img {
-          width: 250px;
-        }
-      }
-    }
-  }
-  .blogContents {
-    width: 100%;
-    position: relative;
-    strong {
-      display: block;
-      font-size: 25px;
-      font-weight: 500;
-      padding-left: 50px;
-      background-image: url(../images/main/con4_blogIcon.png);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: contain;
-    }
-    h3 {
-      font-size: 35px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 30px 0 40px;
-    }
-    p {
-      width: 450px;
-      word-break: keep-all;
-      font-size: 18px;
-      margin-bottom: 50px;
+    h2 {
+        font-size: 45px;
+        line-height: 1;
+        margin-bottom: 30px;
     }
     .more {
-      a {
-        font-size: 17px;
-        text-decoration: underline;
+        display: block;
+        text-align: right;
+        margin-bottom: 30px;
+        font-size: 18px;
+        cursor: pointer;
         color: #002bd2;
-      }
     }
-    .pic {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 650px;
-      height: 100%;
-      img {
+    .list {
         width: 100%;
-        height: 100%;
-      }
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            width: 600px;
+            margin-bottom: 100px;
+            img {
+                width: 600px;
+                cursor: pointer;
+            }
+            h3 {
+                text-align: center;
+                font-size: 50px;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+            strong {
+                display: block;
+                text-align: center;
+                font-size: 25px;
+            }
+        }
     }
-  }
+`,Ny=A.div`
+    width: 100%;
+    border-bottom: 2px solid #dcdcdc;
+    .inner {
+        width: 1400px;
+        padding: 100px 0;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+    .more {
+        display: block;
+        text-align: right;
+        margin-bottom: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #002bd2;
+    }
+    .list {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 380px;
+            img {
+                width: 380px;
+                cursor: pointer;
+            }
+            h3 {
+                font-size: 30px;
+                font-weight: 600;
+                margin-top: 10px;
+                text-align: center;
+            }
+            strong {
+                display: block;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    }
+`,Sy=A.div`
+    width: 100%;
+    .inner {
+        width: 1400px;
+        padding: 100px 0;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+    .more {
+        display: block;
+        text-align: right;
+        margin-bottom: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #002bd2;
+    }
+    .list {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 380px;
+            img {
+                width: 380px;
+                cursor: pointer;
+            }
+            h3 {
+                font-size: 30px;
+                font-weight: 600;
+                margin-top: 10px;
+                text-align: center;
+            }
+            strong {
+                display: block;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    }
+`,by=A.div`
+    width: 100%;
+    background: #f5f5f5;
+    .inner {
+        width: 1400px;
+        padding: 100px 0;
+    }
+    .news {
+        display: flex;
+        margin-bottom: 100px;
+        p {
+            height: 80px;
+            line-height: 80px;
+            &:first-child {
+                width: 200px;
+                background: #002bd2;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+            }
+            &:last-child {
+                width: 1200px;
+                background: #dde6ff;
+                padding-left: 300px;
+                font-size: 20px;
+                font-weight: 600;
+                position: relative;
+                em {
+                    font-size: 17px;
+                    font-weight: 400;
+                    padding-left: 30px;
+                }
+                span {
+                    font-size: 17px;
+                    text-decoration: underline;
+                    position: absolute;
+                    right: 30px;
+                    bottom: 0;
+                    font-weight: 500;
+                    cursor: pointer;
+                    a {
+                        &:hover {
+                            text-decoration: underline;
+                            color: #002bd2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .instaContents {
+        p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            span {
+                width: 70px;
+                height: 70px;
+                display: block;
+                border-radius: 100%;
+                background-image: url(./images/main/con4_sidiz.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 20px;
+            }
+            strong {
+                display: block;
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+        .list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            li {
+                width: 250px;
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .blogContents {
+        width: 100%;
+        position: relative;
+        strong {
+            display: block;
+            font-size: 25px;
+            font-weight: 500;
+            padding-left: 50px;
+            background-image: url(./images/main/con4_blogIcon.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: contain;
+        }
+        h3 {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin: 30px 0 40px;
+        }
+        p {
+            width: 450px;
+            word-break: keep-all;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        .more {
+            a {
+                font-size: 17px;
+                text-decoration: underline;
+                color: #002bd2;
+            }
+        }
+        .pic {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 650px;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 `,_y=({goProduct:e,navigate:t})=>n.jsx(Cy,{children:n.jsxs("div",{className:"inner",children:[n.jsx("h2",{children:"WORK"}),n.jsx("span",{className:"more",onClick:()=>e(0),children:"ALL PRODUCTS"}),n.jsxs("ul",{className:"list",children:[n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con1_img1.jpg",alt:"",onClick:()=>t("/products/T90")}),n.jsx("h3",{children:"T90"}),n.jsx("strong",{children:"Performance Ergonomic"})]}),n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con1_img2.jpg",alt:"",onClick:()=>t("/products/T80")}),n.jsx("h3",{children:"T80"}),n.jsx("strong",{children:"Tailored Chair"})]}),n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con1_img3.jpg",alt:"",onClick:()=>t("/products/T50")}),n.jsx("h3",{children:"T50"}),n.jsx("strong",{children:"좋은 의자의 기준"})]}),n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con1_img4.jpg",alt:"",onClick:()=>t("/products/T20")}),n.jsx("h3",{children:"T20"}),n.jsx("strong",{children:"Perfection for Everyone"})]})]})]})}),Ey=({goProduct:e,navigate:t})=>n.jsx(Ny,{children:n.jsxs("div",{className:"inner",children:[n.jsx("h2",{children:"WORK & MORE"}),n.jsx("span",{className:"more",onClick:()=>e(1),children:"ALL PRODUCTS"}),n.jsxs("ul",{className:"list",children:[n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con2_img1.jpg",alt:"",onClick:()=>t("/products/EGA")}),n.jsx("h3",{children:"EGA"}),n.jsx("strong",{children:"나만을 위한 아늑함"})]}),n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con2_img2.jpg",alt:"",onClick:()=>t("/products/BUTTON")}),n.jsx("h3",{children:"BUTTON"}),n.jsx("strong",{children:"심플 & 미니멀"})]}),n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con2_img3.jpg",alt:"",onClick:()=>t("/products/MANE")}),n.jsx("h3",{children:"MANE"}),n.jsx("strong",{children:"취향따라 고르는 멀티체어"})]})]})]})}),Ty=({goProduct:e,navigate:t})=>n.jsx(Sy,{children:n.jsxs("div",{className:"inner",children:[n.jsx("h2",{children:"for KIDS"}),n.jsx("span",{className:"more",onClick:()=>e(4),children:"ALL PRODUCTS"}),n.jsxs("ul",{className:"list",children:[n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con3_img1.jpg",alt:"",onClick:()=>t("/products/molti")}),n.jsx("h3",{children:"molti"}),n.jsx("strong",{children:"멀티플레이어 아기의자"})]}),n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con3_img2.jpg",alt:"",onClick:()=>t("/products/atti")}),n.jsx("h3",{children:"atti"}),n.jsx("strong",{children:"플레이 체어"})]}),n.jsxs("li",{children:[n.jsx("img",{src:"./images/main/con3_img3.jpg",alt:"",onClick:()=>t("/products/RINGO")}),n.jsx("h3",{children:"ringo"}),n.jsx("strong",{children:"생각이 자라는 의자"})]})]})]})}),$y=()=>n.jsx(by,{children:n.jsxs("div",{className:"inner",children:[n.jsxs("div",{className:"news",children:[n.jsx("p",{children:"NEWS"}),n.jsxs("p",{children:["시디즈 더 프로그레시브 합정 오픈",n.jsx("em",{children:"2024.02.08"}),n.jsx("span",{children:n.jsx(C,{to:"/news",children:"전체보기"})})]})]}),n.jsxs("div",{className:"instaContents",children:[n.jsxs("p",{children:[n.jsx("span",{}),n.jsx("strong",{children:n.jsx("a",{href:"https://www.instagram.com/sidiz_korea?igsh=MW9iYXVldGdid3F1Nw==",target:"blank",children:"@sidiz_korea"})})]}),n.jsxs("ul",{className:"list",children:[n.jsx("li",{children:n.jsx("a",{href:"https://www.instagram.com/p/C73d3aHyAYA/?img_index=1",target:"blank",children:n.jsx("img",{src:"./images/main/con4_img1.jpg",alt:""})})}),n.jsx("li",{children:n.jsx("a",{href:"https://www.instagram.com/reel/C705SUXShhJ/",target:"blank",children:n.jsx("img",{src:"./images/main/con4_img2.jpg",alt:""})})}),n.jsx("li",{children:n.jsx("a",{href:"https://www.instagram.com/p/C70LqxQyDin/",target:"blank",children:n.jsx("img",{src:"./images/main/con4_img3.jpg",alt:""})})}),n.jsx("li",{children:n.jsx("a",{href:"https://www.instagram.com/sidiz_korea/p/C7oBfQruceR/?img_index=1",target:"blank",children:n.jsx("img",{src:"./images/main/con4_img4.jpg",alt:""})})}),n.jsx("li",{children:n.jsx("a",{href:"https://www.instagram.com/sidiz_korea/reel/C7ntLBnvwOr/",target:"blank",children:n.jsx("img",{src:"./images/main/con4_img5.jpg",alt:""})})})]})]}),n.jsxs("div",{className:"blogContents",children:[n.jsx("strong",{children:"의자 위, 예술을 만나는 시간!"}),n.jsxs("h3",{children:["시디즈, 국립현대미술관",n.jsx("br",{}),"뮤지엄 체어 후원"]}),n.jsx("p",{children:"앉음 (Sitting Experience)을 통해 더욱 충만하고 나은 삶을 경험할 수 있도록 노력하는 시디즈가 이번에는 국립현대미술관에 뮤지엄 체어를 후원하게 되었다는 반가운 소식을 전해 드립니다."}),n.jsx("span",{className:"more",children:n.jsx("a",{href:"https://blog.naver.com/sidiz_official/223217691179",target:"blank",children:"LEARN MORE"})}),n.jsx("p",{className:"pic",children:n.jsx("a",{href:"https://blog.naver.com/sidiz_official/223217691179",target:"blank",children:n.jsx("img",{src:"./images/main/con4_img6.jpg",alt:""})})})]})]})}),Iy=A.section`
     width: 100%;
     height: 950px;
