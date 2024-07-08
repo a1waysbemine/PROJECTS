@@ -8,7 +8,7 @@ const FindStore = () => {
 
     return (
         <FindStoreWrap>
-            <div className="subInner">dd</div>
+            <div className="subInner">ㅇㅇ</div>
         </FindStoreWrap>
     );
 };
