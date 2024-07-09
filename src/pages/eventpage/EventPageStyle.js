@@ -65,7 +65,7 @@ export const EventLi = styled.li`
     strong,
     span {
         padding: 10px 15px;
-        font-size: 14px;
+        font-size: 13px;
         display: block;
     }
     p {
