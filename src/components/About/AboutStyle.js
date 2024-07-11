@@ -69,16 +69,16 @@ export const BrandStoryWrap = styled.div`
                 color: #fff;
             }
             &:nth-child(1) {
-                background-image: url(../images/about/value_img1.jpg);
+                background-image: url(./images/about/value_img1.jpg);
             }
             &:nth-child(2) {
-                background-image: url(../images/about/value_img2.jpg);
+                background-image: url(./images/about/value_img2.jpg);
             }
             &:nth-child(3) {
-                background-image: url(../images/about/value_img3.jpg);
+                background-image: url(./images/about/value_img3.jpg);
             }
             &:nth-child(4) {
-                background-image: url(../images/about/value_img4.jpg);
+                background-image: url(./images/about/value_img4.jpg);
             }
         }
     }

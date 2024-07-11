@@ -79,7 +79,7 @@ const BrandStory = ({ categorize }) => {
                 <h3>HISTORY</h3>
                 <div className="hisBox">
                     <p>
-                        <img src="../images/about/history_visual.jpg" alt="" />
+                        <img src="./images/about/history_visual.jpg" alt="" />
                     </p>
                     <p className="txt">
                         좋은 의자를 만들겠다는 일념으로 출발한 시디즈는
