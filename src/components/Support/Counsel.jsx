@@ -69,7 +69,7 @@ const Counsel = () => {
         detailsRef.current.innerText = '';
         alert('상담 신청이 완료되었습니다');
         navigate('/mypage');
-        changeMypageCategory('상담내역');
+        dispatch(changeMypageCategory('상담내역'));
     };
 
     return (

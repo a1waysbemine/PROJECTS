@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
 import { TextWrap } from '../../pages/Main/MainStyle';
 import visual from '../../assets/api/MainVisual';
 
-const VisualText = ({ onView, onId, cnt }) => {
+const VisualText = ({ onId, cnt }) => {
     return (
         <TextWrap>
             {visual.map((visualItem) => (

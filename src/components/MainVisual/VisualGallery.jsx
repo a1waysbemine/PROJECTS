@@ -2,8 +2,6 @@ import { GalleryWrap } from '../../pages/Main/MainStyle';
 import visual from '../../assets/api/MainVisual';
 
 const VisualGallery = ({ cnt }) => {
-    // const { id, h2, strong, imgUrl } = visual;
-
     return (
         <GalleryWrap>
             {visual.map((visualItem) => (
